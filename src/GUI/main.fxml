@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+
+        <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+                    minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="400.0" prefWidth="770.0"
+                    xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+                    fx:controller="GUI.Controller">
+    <children>
+        <TableView fx:id="tableTransactions" layoutX="10.0" layoutY="62.0" prefHeight="324.0" prefWidth="750.0" stylesheets="@css/style.css">
+            <placeholder>
+                <Label text="Выберите файл для отображения"/>
+            </placeholder>
+            <columns>
+                <TableColumn prefWidth="30.0" text="№" fx:id="idColumn" />
+                <TableColumn prefWidth="60.0" text="Дата" fx:id="dateColumn" />
+                <TableColumn prefWidth="60.0" text="Время" fx:id="timeColumn" />
+                <TableColumn prefWidth="80.0" text="№ кассы" fx:id="cashRegColumn" />
+                <TableColumn prefWidth="80.0" text="№ чека" fx:id="chequeIdColumn" />
+                <TableColumn prefWidth="120.0" text="Тип транзакции" fx:id="transTypeColumn" />
+                <TableColumn prefWidth="80.0" text="Код кассира" fx:id="cashierIdColumn" />
+                <TableColumn prefWidth="80.0" text="Сумма чека" fx:id="totalColumn" />
+                <TableColumn prefWidth="160.0" text="№ дисконтной карты" fx:id="discountCardColumn" />
+            </columns>
+        </TableView>
+        <Button fx:id="openFileButton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false"
+                prefHeight="5.0" prefWidth="150.0" text="Выбрать файл"/>
+    </children>
+</AnchorPane>

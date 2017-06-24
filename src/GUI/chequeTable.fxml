@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="90.0" prefWidth="610.0"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="GUI.SecondaryController">
+    <children>
+        <TableView fx:id="tableCheques" layoutX="5.0" layoutY="5.0" prefHeight="55.0" prefWidth="600.0" stylesheets="@css/style.css">
+            <columns>
+                <TableColumn prefWidth="80.0" text="№ транзакции" fx:id="transIdColumn" />
+                <TableColumn prefWidth="80.0" text="Сторнирование" fx:id="reverseColumn" />
+                <TableColumn prefWidth="80.0" text="№ секции" fx:id="sectionIdColumn" />
+                <TableColumn prefWidth="80.0" text="Код товара" fx:id="itemCodeColumn" />
+                <TableColumn prefWidth="80.0" text="Цена" fx:id="priceColumn" />
+                <TableColumn prefWidth="80.0" text="Количество" fx:id="amountColumn" />
+                <TableColumn prefWidth="100.0" text="Сумма скидки" fx:id="discountColumn" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
